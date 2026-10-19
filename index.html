@@ -1,0 +1,26 @@
+{% extends "base.html" %}{% block title %}Beranda{% endblock %}
+{% block content %}
+<section class="hero">
+  <div class="hero-copy"><div class="eyebrow"><span class="pulse"></span> REWARD CLUB • DEMO</div>
+    <h1>Setiap langkah kecil,<br><span>jadi pencapaian.</span></h1>
+    <p>Kumpulkan poin demo lewat aktivitas harian, jelajahi misi, dan ajak teman bergabung. Semua dalam satu dashboard yang simpel.</p>
+    <div class="hero-actions"><a class="btn primary" href="{{ url_for('register') }}">Mulai gratis <span>↗</span></a><a class="btn ghost" href="{{ url_for('login') }}">Saya sudah punya akun</a></div>
+    <div class="trust"><span>✓ Gratis bergabung</span><span>✓ Riwayat transparan</span><span>✓ Poin demo</span></div>
+  </div>
+  <div class="preview-card">
+    <div class="preview-top"><span class="mini-logo">m</span><span>OVERVIEW</span><span class="live-dot">● LIVE DEMO</span></div>
+    <p class="muted">Total poin kamu</p><div class="preview-points">1,280 <small>PTS</small></div>
+    <div class="trend"><span>↗</span> Contoh tampilan dashboard</div>
+    <div class="progress-label"><span>Level Explorer</span><span>64%</span></div><div class="progress"><i></i></div>
+    <div class="preview-bottom"><div><small>Daily bonus</small><b>+20 pts</b></div><div><small>Aktivitas</small><b>3 misi</b></div></div>
+    <div class="glow"></div>
+  </div>
+</section>
+<section class="features"><div class="section-head"><div><div class="eyebrow">DIBUAT UNTUK KAMU</div><h2>Reward yang terasa simpel.</h2></div><p>Mulai dari misi kecil, pantau progres, dan lihat semua perubahan poin secara transparan.</p></div>
+<div class="feature-grid">
+  <article class="feature"><span class="feature-icon">✦</span><h3>Bonus harian</h3><p>Klaim bonus harian demo sekali setiap hari.</p></article>
+  <article class="feature"><span class="feature-icon">◎</span><h3>Misi sederhana</h3><p>Selesaikan tugas yang tersedia dan kumpulkan poin.</p></article>
+  <article class="feature"><span class="feature-icon">↗</span><h3>Ajak teman</h3><p>Bagikan kode referral dan lihat jumlah teman yang bergabung.</p></article>
+</div></section>
+<div class="notice"><b>Transparansi:</b> poin pada website ini hanya untuk demonstrasi. Poin tidak dapat ditukar atau ditarik menjadi uang.</div>
+{% endblock %}
